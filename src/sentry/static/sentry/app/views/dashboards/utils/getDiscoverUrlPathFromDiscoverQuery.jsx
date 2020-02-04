@@ -38,3 +38,52 @@ export function getDiscoverUrlPathFromDiscoverQuery({organization, selection, qu
     limit: 1000,
   })}&visualization=${visual}`;
 }
+
+export function getDiscover2UrlPathFromDiscoverQuery({organization, selection, query}) {
+  console.log(organization);
+  console.log(selection);
+  console.log('query', query);
+
+  const newQuery = {
+    name: query.name,
+    field: [...query.fields, 'count()'],
+    sort: query.orderby,
+    statsPeriod: selection?.datetime?.period,
+  };
+
+  console.log('newQuery', newQuery);
+  const queryQueries = query.conditions.map(c => {
+    const tag = c[0];
+    // const val = c[2].includes(' ') ? `"${c[2]}"` : c[2];
+    const val = c[2];
+
+    const operator = c[1];
+    const isNot = operator.includes('!') || operator.includes('NOT');
+    const isNull = operator.includes('NULL');
+    const isLike = operator.includes('LIKE');
+
+    const hasSpace = c[2].includes(' ');
+
+    const q = [];
+    if (isNot) {
+      q.push('!');
+    }
+
+    q.push(tag);
+    q.push(':');
+
+    if (hasSpace) {
+      q.push('"');
+    }
+
+    if (hasSpace) {
+      q.push('"');
+    }
+
+    return q.join('');
+  });
+
+  const queryQuery = queryQueries.join(' ');
+
+  return '';
+}

@@ -2,7 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 import omit from 'lodash/omit';
 
-import {getDiscoverUrlPathFromDiscoverQuery} from 'app/views/dashboards/utils/getDiscoverUrlPathFromDiscoverQuery';
+import {
+  getDiscoverUrlPathFromDiscoverQuery,
+  getDiscover2UrlPathFromDiscoverQuery,
+} from 'app/views/dashboards/utils/getDiscoverUrlPathFromDiscoverQuery';
 import {getEventsUrlPathFromDiscoverQuery} from 'app/views/dashboards/utils/getEventsUrlPathFromDiscoverQuery';
 import {t} from 'app/locale';
 import Button from 'app/components/button';
@@ -20,13 +23,11 @@ class ExploreWidget extends React.Component {
     selection: SentryTypes.GlobalSelection,
   };
 
-  getExportToDiscover = query => {
+  getExportToDiscover = (query, isDiscover2 = false) => {
     const {selection, organization} = this.props;
-    return getDiscoverUrlPathFromDiscoverQuery({
-      organization,
-      selection,
-      query,
-    });
+    return isDiscover2
+      ? getDiscover2UrlPathFromDiscoverQuery({organization, selection, query})
+      : getDiscoverUrlPathFromDiscoverQuery({organization, selection, query});
   };
 
   getExportToEvents = query => {
@@ -68,6 +69,20 @@ class ExploreWidget extends React.Component {
                           }
                         >
                           <InlineSvg src="icon-discover" />
+                        </ExploreAction>
+                      )}
+                    </Feature>
+
+                    <Feature features={['discover-basic']} organization={organization}>
+                      {({hasFeature}) => (
+                        <ExploreAction
+                          to={this.getExportToDiscover(query, true)}
+                          disabled={!hasFeature}
+                          title={
+                            hasFeature ? '' : t('You do not have access to Discover2')
+                          }
+                        >
+                          <InlineSvg src="icon-telescope" />
                         </ExploreAction>
                       )}
                     </Feature>
