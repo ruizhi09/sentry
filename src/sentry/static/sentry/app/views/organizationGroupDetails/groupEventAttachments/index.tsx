@@ -39,7 +39,7 @@ class GroupEventAttachments extends React.Component<Props, State> {
     pageLinks: null,
   };
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.fetchData();
   }
 

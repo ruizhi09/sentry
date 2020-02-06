@@ -33,7 +33,7 @@ class GroupTagValues extends React.Component {
     pageLinks: '',
   };
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.fetchData();
   }
 
