@@ -11,6 +11,8 @@ from sentry.tasks.store import preprocess_event, process_event, save_event
 from sentry.testutils import PluginTestCase
 from sentry.utils.dates import to_datetime
 
+EVENT_ID = "cc3e6c2bb6b6498097f336d1e6979f4b"
+
 
 class BasicPreprocessorPlugin(Plugin2):
     def get_event_preprocessors(self, data):
@@ -47,6 +49,7 @@ class StoreTasksTest(PluginTestCase):
 
         data = {
             "project": project.id,
+            "event_id": EVENT_ID,
             "platform": "mattlang",
             "logentry": {"formatted": "test"},
             "extra": {"foo": "bar"},
@@ -64,6 +67,7 @@ class StoreTasksTest(PluginTestCase):
 
         data = {
             "project": project.id,
+            "event_id": EVENT_ID,
             "platform": "NOTMATTLANG",
             "logentry": {"formatted": "test"},
             "extra": {"foo": "bar"},
@@ -81,6 +85,7 @@ class StoreTasksTest(PluginTestCase):
 
         data = {
             "project": project.id,
+            "event_id": EVENT_ID,
             "platform": "mattlang",
             "logentry": {"formatted": "test"},
             "extra": {"foo": "bar"},
@@ -98,7 +103,7 @@ class StoreTasksTest(PluginTestCase):
         assert duration == 3600
 
         mock_save_event.delay.assert_called_once_with(
-            cache_key="e:1", data=None, start_time=1, event_id=None, project_id=project.id
+            cache_key="e:1", data=None, start_time=1, event_id=EVENT_ID, project_id=project.id
         )
 
     @mock.patch("sentry.tasks.store.save_event")
@@ -108,6 +113,7 @@ class StoreTasksTest(PluginTestCase):
 
         data = {
             "project": project.id,
+            "event_id": EVENT_ID,
             "platform": "noop",
             "logentry": {"formatted": "test"},
             "extra": {"foo": "bar"},
@@ -121,7 +127,7 @@ class StoreTasksTest(PluginTestCase):
         assert mock_default_cache.set.call_count == 0
 
         mock_save_event.delay.assert_called_once_with(
-            cache_key="e:1", data=None, start_time=1, event_id=None, project_id=project.id
+            cache_key="e:1", data=None, start_time=1, event_id=EVENT_ID, project_id=project.id
         )
 
     @mock.patch("sentry.tasks.store.save_event")
@@ -131,6 +137,7 @@ class StoreTasksTest(PluginTestCase):
 
         data = {
             "project": project.id,
+            "event_id": EVENT_ID,
             "platform": "holdmeclose",
             "logentry": {"formatted": "test"},
             "extra": {"foo": "bar"},
@@ -146,7 +153,7 @@ class StoreTasksTest(PluginTestCase):
         assert duration == 3600
 
         mock_save_event.delay.assert_called_once_with(
-            cache_key="e:1", data=None, start_time=1, event_id=None, project_id=project.id
+            cache_key="e:1", data=None, start_time=1, event_id=EVENT_ID, project_id=project.id
         )
 
     @mock.patch.object(tsdb, "incr_multi")
