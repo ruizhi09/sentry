@@ -162,7 +162,7 @@ exports[`IssueListActions Bulk Total results < bulk limit bulk resolves 1`] = `
                 }
               }
             >
-              <StyledButton
+              <Styled(Component)
                 aria-disabled={false}
                 aria-label="Cancel"
                 disabled={false}
@@ -178,7 +178,7 @@ exports[`IssueListActions Bulk Total results < bulk limit bulk resolves 1`] = `
                 <Component
                   aria-disabled={false}
                   aria-label="Cancel"
-                  className="css-1c2phb1-StyledButton edwq9my0"
+                  className="css-15fumdd"
                   forwardRef={null}
                   onClick={[Function]}
                   role="button"
@@ -191,7 +191,7 @@ exports[`IssueListActions Bulk Total results < bulk limit bulk resolves 1`] = `
                   <button
                     aria-disabled={false}
                     aria-label="Cancel"
-                    className="css-1c2phb1-StyledButton edwq9my0"
+                    className="css-15fumdd"
                     onClick={[Function]}
                     role="button"
                     style={
@@ -200,23 +200,23 @@ exports[`IssueListActions Bulk Total results < bulk limit bulk resolves 1`] = `
                       }
                     }
                   >
-                    <ButtonLabel
+                    <Styled(Component)
                       align="center"
                     >
                       <Component
                         align="center"
-                        className="css-zmpclt-ButtonLabel edwq9my1"
+                        className="css-1f8k9qh"
                       >
                         <span
-                          className="css-zmpclt-ButtonLabel edwq9my1"
+                          className="css-1f8k9qh"
                         >
                           Cancel
                         </span>
                       </Component>
-                    </ButtonLabel>
+                    </Styled(Component)>
                   </button>
                 </Component>
-              </StyledButton>
+              </Styled(Component)>
             </Button>
           </forwardRef<Button>>
           <forwardRef<Button>
@@ -235,7 +235,7 @@ exports[`IssueListActions Bulk Total results < bulk limit bulk resolves 1`] = `
               onClick={[Function]}
               priority="primary"
             >
-              <StyledButton
+              <Styled(Component)
                 aria-disabled={false}
                 aria-label="Bulk resolve issues"
                 autoFocus={true}
@@ -250,7 +250,7 @@ exports[`IssueListActions Bulk Total results < bulk limit bulk resolves 1`] = `
                   aria-disabled={false}
                   aria-label="Bulk resolve issues"
                   autoFocus={true}
-                  className="css-1e05jtd-StyledButton edwq9my0"
+                  className="css-1wee7ac"
                   data-test-id="confirm-button"
                   forwardRef={null}
                   onClick={[Function]}
@@ -260,30 +260,30 @@ exports[`IssueListActions Bulk Total results < bulk limit bulk resolves 1`] = `
                     aria-disabled={false}
                     aria-label="Bulk resolve issues"
                     autoFocus={true}
-                    className="css-1e05jtd-StyledButton edwq9my0"
+                    className="css-1wee7ac"
                     data-test-id="confirm-button"
                     onClick={[Function]}
                     role="button"
                   >
-                    <ButtonLabel
+                    <Styled(Component)
                       align="center"
                       priority="primary"
                     >
                       <Component
                         align="center"
-                        className="css-zmpclt-ButtonLabel edwq9my1"
+                        className="css-1f8k9qh"
                         priority="primary"
                       >
                         <span
-                          className="css-zmpclt-ButtonLabel edwq9my1"
+                          className="css-1f8k9qh"
                         >
                           Bulk resolve issues
                         </span>
                       </Component>
-                    </ButtonLabel>
+                    </Styled(Component)>
                   </button>
                 </Component>
-              </StyledButton>
+              </Styled(Component)>
             </Button>
           </forwardRef<Button>>
         </div>
@@ -487,7 +487,7 @@ exports[`IssueListActions Bulk Total results > bulk limit bulk resolves 1`] = `
                 }
               }
             >
-              <StyledButton
+              <Styled(Component)
                 aria-disabled={false}
                 aria-label="Cancel"
                 disabled={false}
@@ -503,7 +503,7 @@ exports[`IssueListActions Bulk Total results > bulk limit bulk resolves 1`] = `
                 <Component
                   aria-disabled={false}
                   aria-label="Cancel"
-                  className="css-1c2phb1-StyledButton edwq9my0"
+                  className="css-15fumdd"
                   forwardRef={null}
                   onClick={[Function]}
                   role="button"
@@ -516,7 +516,7 @@ exports[`IssueListActions Bulk Total results > bulk limit bulk resolves 1`] = `
                   <button
                     aria-disabled={false}
                     aria-label="Cancel"
-                    className="css-1c2phb1-StyledButton edwq9my0"
+                    className="css-15fumdd"
                     onClick={[Function]}
                     role="button"
                     style={
@@ -525,23 +525,23 @@ exports[`IssueListActions Bulk Total results > bulk limit bulk resolves 1`] = `
                       }
                     }
                   >
-                    <ButtonLabel
+                    <Styled(Component)
                       align="center"
                     >
                       <Component
                         align="center"
-                        className="css-zmpclt-ButtonLabel edwq9my1"
+                        className="css-1f8k9qh"
                       >
                         <span
-                          className="css-zmpclt-ButtonLabel edwq9my1"
+                          className="css-1f8k9qh"
                         >
                           Cancel
                         </span>
                       </Component>
-                    </ButtonLabel>
+                    </Styled(Component)>
                   </button>
                 </Component>
-              </StyledButton>
+              </Styled(Component)>
             </Button>
           </forwardRef<Button>>
           <forwardRef<Button>
@@ -560,7 +560,7 @@ exports[`IssueListActions Bulk Total results > bulk limit bulk resolves 1`] = `
               onClick={[Function]}
               priority="primary"
             >
-              <StyledButton
+              <Styled(Component)
                 aria-disabled={false}
                 aria-label="Bulk resolve issues"
                 autoFocus={true}
@@ -575,7 +575,7 @@ exports[`IssueListActions Bulk Total results > bulk limit bulk resolves 1`] = `
                   aria-disabled={false}
                   aria-label="Bulk resolve issues"
                   autoFocus={true}
-                  className="css-1e05jtd-StyledButton edwq9my0"
+                  className="css-1wee7ac"
                   data-test-id="confirm-button"
                   forwardRef={null}
                   onClick={[Function]}
@@ -585,30 +585,30 @@ exports[`IssueListActions Bulk Total results > bulk limit bulk resolves 1`] = `
                     aria-disabled={false}
                     aria-label="Bulk resolve issues"
                     autoFocus={true}
-                    className="css-1e05jtd-StyledButton edwq9my0"
+                    className="css-1wee7ac"
                     data-test-id="confirm-button"
                     onClick={[Function]}
                     role="button"
                   >
-                    <ButtonLabel
+                    <Styled(Component)
                       align="center"
                       priority="primary"
                     >
                       <Component
                         align="center"
-                        className="css-zmpclt-ButtonLabel edwq9my1"
+                        className="css-1f8k9qh"
                         priority="primary"
                       >
                         <span
-                          className="css-zmpclt-ButtonLabel edwq9my1"
+                          className="css-1f8k9qh"
                         >
                           Bulk resolve issues
                         </span>
                       </Component>
-                    </ButtonLabel>
+                    </Styled(Component)>
                   </button>
                 </Component>
-              </StyledButton>
+              </Styled(Component)>
             </Button>
           </forwardRef<Button>>
         </div>

@@ -2,7 +2,7 @@ import {Box, Flex} from 'reflexbox';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import styled from '@emotion/styled';
+import styled from 'app/emotion-styled';
 import {trackIntegrationEvent} from 'app/utils/integrationUtil';
 import {t} from 'app/locale';
 import Access from 'app/components/acl/access';

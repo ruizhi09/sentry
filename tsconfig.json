@@ -30,9 +30,8 @@
     "baseUrl": ".",
     "outDir": "src/sentry/static/sentry/dist",
     "paths": {
+      "app/emotion-styled": ["src/sentry/static/sentry/app/styled.tsx"],
       "app/*": ["src/sentry/static/sentry/app/*"],
-      "@emotion/styled": ["src/sentry/static/sentry/app/styled.tsx"],
-      "@original-emotion/*": ["node_modules/@emotion/*"]
     },
     "plugins": [{"name": "typescript-styled-plugin"}]
   },

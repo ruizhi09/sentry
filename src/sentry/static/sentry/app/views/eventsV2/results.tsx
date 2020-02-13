@@ -5,7 +5,7 @@ import omit from 'lodash/omit';
 import uniqBy from 'lodash/uniqBy';
 import isEqual from 'lodash/isEqual';
 
-import styled from '@emotion/styled';
+import styled from 'app/emotion-styled';
 import {Organization, GlobalSelection} from 'app/types';
 import {Client} from 'app/api';
 import {Panel} from 'app/components/panels';

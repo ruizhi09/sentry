@@ -9,6 +9,7 @@ module.exports = {
   coverageDirectory: '.artifacts/coverage/',
   snapshotSerializers: ['enzyme-to-json/serializer'],
   moduleNameMapper: {
+    'app/emotion-styled': '<rootDir>/node_modules/@emotion/styled',
     '^sentry-test/(.*)': '<rootDir>/tests/js/sentry-test/$1',
     '\\.(css|less|png|mp4)$': '<rootDir>/tests/js/sentry-test/importStyleMock.js',
     '\\.(svg)$': '<rootDir>/tests/js/sentry-test/svgMock.js',

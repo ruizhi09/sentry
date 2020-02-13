@@ -4,7 +4,7 @@
     "**/*.min.js": true,
     "**/*.js.map": true,
     "/static/": true,
-    "node_modules": true,
+    "node_modules": false,
     "htmlcov": true,
     "build": true,
     "*.log": true,

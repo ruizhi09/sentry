@@ -1027,29 +1027,29 @@ exports[`Sidebar SidebarPanel can display Broadcasts panel and mark as seen 1`] 
   message="Source maps are JSON files that contain information on how to map your transpiled source code back to their original source."
   title="Learn about Source Maps"
 >
-  <SidebarPanelItemRoot>
+  <Styled(div)>
     <div
-      className="css-lce7u9-SidebarPanelItemRoot ekutvbl0"
+      className="css-17xj276"
     >
-      <Title
+      <Styled(div)
         hasSeen={false}
       >
         <div
-          className="css-1fgxw89-Title ekutvbl2"
+          className="css-b7jirm"
         >
           Learn about Source Maps
         </div>
-      </Title>
-      <Message>
+      </Styled(div)>
+      <Styled(div)>
         <div
-          className="css-kuchfm-Text-Message ekutvbl4"
+          className="css-1hcq2f7"
         >
           Source maps are JSON files that contain information on how to map your transpiled source code back to their original source.
         </div>
-      </Message>
-      <Text>
+      </Styled(div)>
+      <Styled(div)>
         <div
-          className="css-166h1v-Text ekutvbl3"
+          className="css-1tlqkni"
         >
           <ForwardRef
             href="https://docs.sentry.io/hosted/clients/javascript/sourcemaps/#uploading-source-maps-to-sentry"
@@ -1063,9 +1063,9 @@ exports[`Sidebar SidebarPanel can display Broadcasts panel and mark as seen 1`] 
             </a>
           </ForwardRef>
         </div>
-      </Text>
+      </Styled(div)>
     </div>
-  </SidebarPanelItemRoot>
+  </Styled(div)>
 </SidebarPanelItem>
 `;
 
@@ -1136,7 +1136,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
               href="https://status.sentry.io"
               size="small"
             >
-              <StyledButton
+              <Styled(Component)
                 aria-disabled={false}
                 aria-label="Learn more"
                 disabled={false}
@@ -1150,7 +1150,7 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                 <Component
                   aria-disabled={false}
                   aria-label="Learn more"
-                  className="css-12ogwys-StyledButton edwq9my0"
+                  className="css-ynb5ra"
                   forwardRef={null}
                   href="https://status.sentry.io"
                   onClick={[Function]}
@@ -1160,31 +1160,31 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                   <a
                     aria-disabled={false}
                     aria-label="Learn more"
-                    className="css-12ogwys-StyledButton edwq9my0"
+                    className="css-ynb5ra"
                     href="https://status.sentry.io"
                     onClick={[Function]}
                     role="button"
                     size="small"
                   >
-                    <ButtonLabel
+                    <Styled(Component)
                       align="center"
                       size="small"
                     >
                       <Component
                         align="center"
-                        className="css-19gcr2f-ButtonLabel edwq9my1"
+                        className="css-ilb31p"
                         size="small"
                       >
                         <span
-                          className="css-19gcr2f-ButtonLabel edwq9my1"
+                          className="css-ilb31p"
                         >
                           Learn more
                         </span>
                       </Component>
-                    </ButtonLabel>
+                    </Styled(Component)>
                   </a>
                 </Component>
-              </StyledButton>
+              </Styled(Component)>
             </Button>
           </forwardRef<Button>>
         </div>
@@ -1422,7 +1422,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                         onClick={[Function]}
                                         size="xsmall"
                                       >
-                                        <StyledButton
+                                        <Styled(Component)
                                           aria-disabled={false}
                                           aria-label="Skip task"
                                           className="css-13i4fqu-SkipButton e1a4o5477"
@@ -1436,7 +1436,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                           <Component
                                             aria-disabled={false}
                                             aria-label="Skip task"
-                                            className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                            className="e1a4o5477 css-1pzdjwq-SkipButton"
                                             forwardRef={null}
                                             onClick={[Function]}
                                             role="button"
@@ -1445,30 +1445,30 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             <button
                                               aria-disabled={false}
                                               aria-label="Skip task"
-                                              className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                              className="e1a4o5477 css-1pzdjwq-SkipButton"
                                               onClick={[Function]}
                                               role="button"
                                               size="xsmall"
                                             >
-                                              <ButtonLabel
+                                              <Styled(Component)
                                                 align="center"
                                                 size="xsmall"
                                               >
                                                 <Component
                                                   align="center"
-                                                  className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                  className="css-1wvpfzy"
                                                   size="xsmall"
                                                 >
                                                   <span
-                                                    className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                    className="css-1wvpfzy"
                                                   >
                                                     Skip task
                                                   </span>
                                                 </Component>
-                                              </ButtonLabel>
+                                              </Styled(Component)>
                                             </button>
                                           </Component>
-                                        </StyledButton>
+                                        </Styled(Component)>
                                       </Button>
                                     </forwardRef<Button>>
                                   </SkipButton>
@@ -1541,7 +1541,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             priority="link"
                                             to="/settings/org-slug/support/"
                                           >
-                                            <StyledButton
+                                            <Styled(Component)
                                               aria-disabled={false}
                                               aria-label="Go to Support"
                                               disabled={false}
@@ -1554,7 +1554,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                               <Component
                                                 aria-disabled={false}
                                                 aria-label="Go to Support"
-                                                className="css-1ilrgbi-StyledButton edwq9my0"
+                                                className="css-j2if9j"
                                                 forwardRef={null}
                                                 onClick={[Function]}
                                                 role="button"
@@ -1563,7 +1563,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                 <Link
                                                   aria-disabled={false}
                                                   aria-label="Go to Support"
-                                                  className="css-1ilrgbi-StyledButton edwq9my0"
+                                                  className="css-j2if9j"
                                                   onClick={[Function]}
                                                   onlyActiveOnIndex={false}
                                                   role="button"
@@ -1573,31 +1573,31 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                   <a
                                                     aria-disabled={false}
                                                     aria-label="Go to Support"
-                                                    className="css-1ilrgbi-StyledButton edwq9my0"
+                                                    className="css-j2if9j"
                                                     onClick={[Function]}
                                                     role="button"
                                                     style={Object {}}
                                                   >
-                                                    <ButtonLabel
+                                                    <Styled(Component)
                                                       align="center"
                                                       priority="link"
                                                     >
                                                       <Component
                                                         align="center"
-                                                        className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                        className="css-1h91gv2"
                                                         priority="link"
                                                       >
                                                         <span
-                                                          className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                          className="css-1h91gv2"
                                                         >
                                                           Go to Support
                                                         </span>
                                                       </Component>
-                                                    </ButtonLabel>
+                                                    </Styled(Component)>
                                                   </a>
                                                 </Link>
                                               </Component>
-                                            </StyledButton>
+                                            </Styled(Component)>
                                           </Button>
                                         </forwardRef<Button>>
                                          
@@ -1748,7 +1748,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                         onClick={[Function]}
                                         size="xsmall"
                                       >
-                                        <StyledButton
+                                        <Styled(Component)
                                           aria-disabled={false}
                                           aria-label="Skip task"
                                           className="css-13i4fqu-SkipButton e1a4o5477"
@@ -1762,7 +1762,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                           <Component
                                             aria-disabled={false}
                                             aria-label="Skip task"
-                                            className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                            className="e1a4o5477 css-1pzdjwq-SkipButton"
                                             forwardRef={null}
                                             onClick={[Function]}
                                             role="button"
@@ -1771,30 +1771,30 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             <button
                                               aria-disabled={false}
                                               aria-label="Skip task"
-                                              className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                              className="e1a4o5477 css-1pzdjwq-SkipButton"
                                               onClick={[Function]}
                                               role="button"
                                               size="xsmall"
                                             >
-                                              <ButtonLabel
+                                              <Styled(Component)
                                                 align="center"
                                                 size="xsmall"
                                               >
                                                 <Component
                                                   align="center"
-                                                  className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                  className="css-1wvpfzy"
                                                   size="xsmall"
                                                 >
                                                   <span
-                                                    className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                    className="css-1wvpfzy"
                                                   >
                                                     Skip task
                                                   </span>
                                                 </Component>
-                                              </ButtonLabel>
+                                              </Styled(Component)>
                                             </button>
                                           </Component>
-                                        </StyledButton>
+                                        </Styled(Component)>
                                       </Button>
                                     </forwardRef<Button>>
                                   </SkipButton>
@@ -1867,7 +1867,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             priority="link"
                                             to="/settings/org-slug/support/"
                                           >
-                                            <StyledButton
+                                            <Styled(Component)
                                               aria-disabled={false}
                                               aria-label="Go to Support"
                                               disabled={false}
@@ -1880,7 +1880,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                               <Component
                                                 aria-disabled={false}
                                                 aria-label="Go to Support"
-                                                className="css-1ilrgbi-StyledButton edwq9my0"
+                                                className="css-j2if9j"
                                                 forwardRef={null}
                                                 onClick={[Function]}
                                                 role="button"
@@ -1889,7 +1889,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                 <Link
                                                   aria-disabled={false}
                                                   aria-label="Go to Support"
-                                                  className="css-1ilrgbi-StyledButton edwq9my0"
+                                                  className="css-j2if9j"
                                                   onClick={[Function]}
                                                   onlyActiveOnIndex={false}
                                                   role="button"
@@ -1899,31 +1899,31 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                   <a
                                                     aria-disabled={false}
                                                     aria-label="Go to Support"
-                                                    className="css-1ilrgbi-StyledButton edwq9my0"
+                                                    className="css-j2if9j"
                                                     onClick={[Function]}
                                                     role="button"
                                                     style={Object {}}
                                                   >
-                                                    <ButtonLabel
+                                                    <Styled(Component)
                                                       align="center"
                                                       priority="link"
                                                     >
                                                       <Component
                                                         align="center"
-                                                        className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                        className="css-1h91gv2"
                                                         priority="link"
                                                       >
                                                         <span
-                                                          className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                          className="css-1h91gv2"
                                                         >
                                                           Go to Support
                                                         </span>
                                                       </Component>
-                                                    </ButtonLabel>
+                                                    </Styled(Component)>
                                                   </a>
                                                 </Link>
                                               </Component>
-                                            </StyledButton>
+                                            </Styled(Component)>
                                           </Button>
                                         </forwardRef<Button>>
                                          
@@ -2070,7 +2070,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                         onClick={[Function]}
                                         size="xsmall"
                                       >
-                                        <StyledButton
+                                        <Styled(Component)
                                           aria-disabled={false}
                                           aria-label="Skip task"
                                           className="css-13i4fqu-SkipButton e1a4o5477"
@@ -2084,7 +2084,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                           <Component
                                             aria-disabled={false}
                                             aria-label="Skip task"
-                                            className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                            className="e1a4o5477 css-1pzdjwq-SkipButton"
                                             forwardRef={null}
                                             onClick={[Function]}
                                             role="button"
@@ -2093,30 +2093,30 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             <button
                                               aria-disabled={false}
                                               aria-label="Skip task"
-                                              className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                              className="e1a4o5477 css-1pzdjwq-SkipButton"
                                               onClick={[Function]}
                                               role="button"
                                               size="xsmall"
                                             >
-                                              <ButtonLabel
+                                              <Styled(Component)
                                                 align="center"
                                                 size="xsmall"
                                               >
                                                 <Component
                                                   align="center"
-                                                  className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                  className="css-1wvpfzy"
                                                   size="xsmall"
                                                 >
                                                   <span
-                                                    className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                    className="css-1wvpfzy"
                                                   >
                                                     Skip task
                                                   </span>
                                                 </Component>
-                                              </ButtonLabel>
+                                              </Styled(Component)>
                                             </button>
                                           </Component>
-                                        </StyledButton>
+                                        </Styled(Component)>
                                       </Button>
                                     </forwardRef<Button>>
                                   </SkipButton>
@@ -2189,7 +2189,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             priority="link"
                                             to="/settings/org-slug/support/"
                                           >
-                                            <StyledButton
+                                            <Styled(Component)
                                               aria-disabled={false}
                                               aria-label="Go to Support"
                                               disabled={false}
@@ -2202,7 +2202,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                               <Component
                                                 aria-disabled={false}
                                                 aria-label="Go to Support"
-                                                className="css-1ilrgbi-StyledButton edwq9my0"
+                                                className="css-j2if9j"
                                                 forwardRef={null}
                                                 onClick={[Function]}
                                                 role="button"
@@ -2211,7 +2211,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                 <Link
                                                   aria-disabled={false}
                                                   aria-label="Go to Support"
-                                                  className="css-1ilrgbi-StyledButton edwq9my0"
+                                                  className="css-j2if9j"
                                                   onClick={[Function]}
                                                   onlyActiveOnIndex={false}
                                                   role="button"
@@ -2221,31 +2221,31 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                   <a
                                                     aria-disabled={false}
                                                     aria-label="Go to Support"
-                                                    className="css-1ilrgbi-StyledButton edwq9my0"
+                                                    className="css-j2if9j"
                                                     onClick={[Function]}
                                                     role="button"
                                                     style={Object {}}
                                                   >
-                                                    <ButtonLabel
+                                                    <Styled(Component)
                                                       align="center"
                                                       priority="link"
                                                     >
                                                       <Component
                                                         align="center"
-                                                        className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                        className="css-1h91gv2"
                                                         priority="link"
                                                       >
                                                         <span
-                                                          className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                          className="css-1h91gv2"
                                                         >
                                                           Go to Support
                                                         </span>
                                                       </Component>
-                                                    </ButtonLabel>
+                                                    </Styled(Component)>
                                                   </a>
                                                 </Link>
                                               </Component>
-                                            </StyledButton>
+                                            </Styled(Component)>
                                           </Button>
                                         </forwardRef<Button>>
                                          
@@ -2398,7 +2398,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                         onClick={[Function]}
                                         size="xsmall"
                                       >
-                                        <StyledButton
+                                        <Styled(Component)
                                           aria-disabled={false}
                                           aria-label="Skip task"
                                           className="css-13i4fqu-SkipButton e1a4o5477"
@@ -2412,7 +2412,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                           <Component
                                             aria-disabled={false}
                                             aria-label="Skip task"
-                                            className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                            className="e1a4o5477 css-1pzdjwq-SkipButton"
                                             forwardRef={null}
                                             onClick={[Function]}
                                             role="button"
@@ -2421,30 +2421,30 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             <button
                                               aria-disabled={false}
                                               aria-label="Skip task"
-                                              className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                              className="e1a4o5477 css-1pzdjwq-SkipButton"
                                               onClick={[Function]}
                                               role="button"
                                               size="xsmall"
                                             >
-                                              <ButtonLabel
+                                              <Styled(Component)
                                                 align="center"
                                                 size="xsmall"
                                               >
                                                 <Component
                                                   align="center"
-                                                  className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                  className="css-1wvpfzy"
                                                   size="xsmall"
                                                 >
                                                   <span
-                                                    className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                    className="css-1wvpfzy"
                                                   >
                                                     Skip task
                                                   </span>
                                                 </Component>
-                                              </ButtonLabel>
+                                              </Styled(Component)>
                                             </button>
                                           </Component>
-                                        </StyledButton>
+                                        </Styled(Component)>
                                       </Button>
                                     </forwardRef<Button>>
                                   </SkipButton>
@@ -2517,7 +2517,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             priority="link"
                                             to="/settings/org-slug/support/"
                                           >
-                                            <StyledButton
+                                            <Styled(Component)
                                               aria-disabled={false}
                                               aria-label="Go to Support"
                                               disabled={false}
@@ -2530,7 +2530,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                               <Component
                                                 aria-disabled={false}
                                                 aria-label="Go to Support"
-                                                className="css-1ilrgbi-StyledButton edwq9my0"
+                                                className="css-j2if9j"
                                                 forwardRef={null}
                                                 onClick={[Function]}
                                                 role="button"
@@ -2539,7 +2539,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                 <Link
                                                   aria-disabled={false}
                                                   aria-label="Go to Support"
-                                                  className="css-1ilrgbi-StyledButton edwq9my0"
+                                                  className="css-j2if9j"
                                                   onClick={[Function]}
                                                   onlyActiveOnIndex={false}
                                                   role="button"
@@ -2549,31 +2549,31 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                   <a
                                                     aria-disabled={false}
                                                     aria-label="Go to Support"
-                                                    className="css-1ilrgbi-StyledButton edwq9my0"
+                                                    className="css-j2if9j"
                                                     onClick={[Function]}
                                                     role="button"
                                                     style={Object {}}
                                                   >
-                                                    <ButtonLabel
+                                                    <Styled(Component)
                                                       align="center"
                                                       priority="link"
                                                     >
                                                       <Component
                                                         align="center"
-                                                        className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                        className="css-1h91gv2"
                                                         priority="link"
                                                       >
                                                         <span
-                                                          className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                          className="css-1h91gv2"
                                                         >
                                                           Go to Support
                                                         </span>
                                                       </Component>
-                                                    </ButtonLabel>
+                                                    </Styled(Component)>
                                                   </a>
                                                 </Link>
                                               </Component>
-                                            </StyledButton>
+                                            </Styled(Component)>
                                           </Button>
                                         </forwardRef<Button>>
                                          
@@ -2728,7 +2728,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                         onClick={[Function]}
                                         size="xsmall"
                                       >
-                                        <StyledButton
+                                        <Styled(Component)
                                           aria-disabled={false}
                                           aria-label="Skip task"
                                           className="css-13i4fqu-SkipButton e1a4o5477"
@@ -2742,7 +2742,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                           <Component
                                             aria-disabled={false}
                                             aria-label="Skip task"
-                                            className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                            className="e1a4o5477 css-1pzdjwq-SkipButton"
                                             forwardRef={null}
                                             onClick={[Function]}
                                             role="button"
@@ -2751,30 +2751,30 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             <button
                                               aria-disabled={false}
                                               aria-label="Skip task"
-                                              className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                              className="e1a4o5477 css-1pzdjwq-SkipButton"
                                               onClick={[Function]}
                                               role="button"
                                               size="xsmall"
                                             >
-                                              <ButtonLabel
+                                              <Styled(Component)
                                                 align="center"
                                                 size="xsmall"
                                               >
                                                 <Component
                                                   align="center"
-                                                  className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                  className="css-1wvpfzy"
                                                   size="xsmall"
                                                 >
                                                   <span
-                                                    className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                    className="css-1wvpfzy"
                                                   >
                                                     Skip task
                                                   </span>
                                                 </Component>
-                                              </ButtonLabel>
+                                              </Styled(Component)>
                                             </button>
                                           </Component>
-                                        </StyledButton>
+                                        </Styled(Component)>
                                       </Button>
                                     </forwardRef<Button>>
                                   </SkipButton>
@@ -2847,7 +2847,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             priority="link"
                                             to="/settings/org-slug/support/"
                                           >
-                                            <StyledButton
+                                            <Styled(Component)
                                               aria-disabled={false}
                                               aria-label="Go to Support"
                                               disabled={false}
@@ -2860,7 +2860,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                               <Component
                                                 aria-disabled={false}
                                                 aria-label="Go to Support"
-                                                className="css-1ilrgbi-StyledButton edwq9my0"
+                                                className="css-j2if9j"
                                                 forwardRef={null}
                                                 onClick={[Function]}
                                                 role="button"
@@ -2869,7 +2869,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                 <Link
                                                   aria-disabled={false}
                                                   aria-label="Go to Support"
-                                                  className="css-1ilrgbi-StyledButton edwq9my0"
+                                                  className="css-j2if9j"
                                                   onClick={[Function]}
                                                   onlyActiveOnIndex={false}
                                                   role="button"
@@ -2879,31 +2879,31 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                   <a
                                                     aria-disabled={false}
                                                     aria-label="Go to Support"
-                                                    className="css-1ilrgbi-StyledButton edwq9my0"
+                                                    className="css-j2if9j"
                                                     onClick={[Function]}
                                                     role="button"
                                                     style={Object {}}
                                                   >
-                                                    <ButtonLabel
+                                                    <Styled(Component)
                                                       align="center"
                                                       priority="link"
                                                     >
                                                       <Component
                                                         align="center"
-                                                        className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                        className="css-1h91gv2"
                                                         priority="link"
                                                       >
                                                         <span
-                                                          className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                          className="css-1h91gv2"
                                                         >
                                                           Go to Support
                                                         </span>
                                                       </Component>
-                                                    </ButtonLabel>
+                                                    </Styled(Component)>
                                                   </a>
                                                 </Link>
                                               </Component>
-                                            </StyledButton>
+                                            </Styled(Component)>
                                           </Button>
                                         </forwardRef<Button>>
                                          
@@ -3058,7 +3058,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                         onClick={[Function]}
                                         size="xsmall"
                                       >
-                                        <StyledButton
+                                        <Styled(Component)
                                           aria-disabled={false}
                                           aria-label="Skip task"
                                           className="css-13i4fqu-SkipButton e1a4o5477"
@@ -3072,7 +3072,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                           <Component
                                             aria-disabled={false}
                                             aria-label="Skip task"
-                                            className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                            className="e1a4o5477 css-1pzdjwq-SkipButton"
                                             forwardRef={null}
                                             onClick={[Function]}
                                             role="button"
@@ -3081,30 +3081,30 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             <button
                                               aria-disabled={false}
                                               aria-label="Skip task"
-                                              className="e1a4o5477 css-1gw4trp-StyledButton-SkipButton edwq9my0"
+                                              className="e1a4o5477 css-1pzdjwq-SkipButton"
                                               onClick={[Function]}
                                               role="button"
                                               size="xsmall"
                                             >
-                                              <ButtonLabel
+                                              <Styled(Component)
                                                 align="center"
                                                 size="xsmall"
                                               >
                                                 <Component
                                                   align="center"
-                                                  className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                  className="css-1wvpfzy"
                                                   size="xsmall"
                                                 >
                                                   <span
-                                                    className="css-cmi7y3-ButtonLabel edwq9my1"
+                                                    className="css-1wvpfzy"
                                                   >
                                                     Skip task
                                                   </span>
                                                 </Component>
-                                              </ButtonLabel>
+                                              </Styled(Component)>
                                             </button>
                                           </Component>
-                                        </StyledButton>
+                                        </Styled(Component)>
                                       </Button>
                                     </forwardRef<Button>>
                                   </SkipButton>
@@ -3177,7 +3177,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             priority="link"
                                             to="/settings/org-slug/support/"
                                           >
-                                            <StyledButton
+                                            <Styled(Component)
                                               aria-disabled={false}
                                               aria-label="Go to Support"
                                               disabled={false}
@@ -3190,7 +3190,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                               <Component
                                                 aria-disabled={false}
                                                 aria-label="Go to Support"
-                                                className="css-1ilrgbi-StyledButton edwq9my0"
+                                                className="css-j2if9j"
                                                 forwardRef={null}
                                                 onClick={[Function]}
                                                 role="button"
@@ -3199,7 +3199,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                 <Link
                                                   aria-disabled={false}
                                                   aria-label="Go to Support"
-                                                  className="css-1ilrgbi-StyledButton edwq9my0"
+                                                  className="css-j2if9j"
                                                   onClick={[Function]}
                                                   onlyActiveOnIndex={false}
                                                   role="button"
@@ -3209,31 +3209,31 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                                   <a
                                                     aria-disabled={false}
                                                     aria-label="Go to Support"
-                                                    className="css-1ilrgbi-StyledButton edwq9my0"
+                                                    className="css-j2if9j"
                                                     onClick={[Function]}
                                                     role="button"
                                                     style={Object {}}
                                                   >
-                                                    <ButtonLabel
+                                                    <Styled(Component)
                                                       align="center"
                                                       priority="link"
                                                     >
                                                       <Component
                                                         align="center"
-                                                        className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                        className="css-1h91gv2"
                                                         priority="link"
                                                       >
                                                         <span
-                                                          className="css-1igyjbb-ButtonLabel edwq9my1"
+                                                          className="css-1h91gv2"
                                                         >
                                                           Go to Support
                                                         </span>
                                                       </Component>
-                                                    </ButtonLabel>
+                                                    </Styled(Component)>
                                                   </a>
                                                 </Link>
                                               </Component>
-                                            </StyledButton>
+                                            </Styled(Component)>
                                           </Button>
                                         </forwardRef<Button>>
                                          
