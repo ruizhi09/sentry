@@ -6,7 +6,7 @@ import six
 
 from django.conf import settings
 
-from sentry.utils import warnings
+from sentry.utils import metrics, warnings
 from sentry.utils.sdk import configure_sdk
 from sentry.utils.warnings import DeprecatedSettingWarning
 
@@ -402,6 +402,9 @@ model_unpickle = django.db.models.base.model_unpickle
 def __model_unpickle_compat(model_id, attrs=None, factory=None):
     from django import VERSION
 
+    if attrs is not None or factory is not None:
+        metrics.incr("django.pickle.loaded_19_pickle.__model_unpickle_compat", skip_internal=False)
+
     if VERSION[:2] in [(1, 10), (1, 11)]:
         return model_unpickle(model_id)
     else:
@@ -409,6 +412,9 @@ def __model_unpickle_compat(model_id, attrs=None, factory=None):
 
 
 def __simple_class_factory_compat(model, attrs):
+    metrics.incr(
+        "django.pickle.loaded_19_pickle.__simple_class_factory_compat", skip_internal=False
+    )
     return model
 
 
